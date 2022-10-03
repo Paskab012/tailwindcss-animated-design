@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tailwindcss -i ./src/index.css -o ./src/main.css",
     "watch": "tailwindcss -i ./src/index.css -o ./src/main.css --watch"
   },
   "repository": {
