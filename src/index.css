@@ -7,4 +7,10 @@
 h1,
 p {
   font-family: 'Volkhov', serif;
+  shadow: 1px 1px 0 rgb(0 0 0 / 20%);
+}
+
+.hero__section {
+  background: linear-gradient(135deg, #051c2c 60%, #03339c 100%);
+  text-shadow: 1px 1px 0 rgb(0 0 0 / 20%);
 }

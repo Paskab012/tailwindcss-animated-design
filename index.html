@@ -4,12 +4,120 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./src/main.css" />
     <title>Document</title>
   </head>
   <body>
-    <header
-      class="top-0 max-w-screen-xl p-4 mx-auto lg:w-screen backdrop-blur-lg header bg-[#051c2c]"
+    <header class="flex justify-between p-2 bg-[#051c2c] text-white">
+      <div class="flex left__side lg:w-[20%] justify-between items-center">
+        <span class="text-5xl text-white material-icons">menu</span>
+        <img
+          src="./src/images/logo.png"
+          class="object-cover h-20 w-30"
+          alt="website logo"
+        />
+      </div>
+      <div class="lg:flex justify-around middle__side w-[66%] hidden">
+        <ul class="flex items-center gap-6">
+          <li>
+            <a href="#">Industries</a>
+          </li>
+          <li>
+            <a href="#">Capabilities</a>
+          </li>
+          <li>
+            <a href="#">Featured Insights</a>
+          </li>
+          <li>
+            <a href="#">Location</a>
+          </li>
+          <li>
+            <a href="#">Careers</a>
+          </li>
+          <li>
+            <a href="#">About Us</a>
+          </li>
+          <li>
+            <a href="#">mcKinsey Blog</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right__side lg:w-[15%] w-full">
+        <div class="flex justify-end up__side">
+          <a href="#" class="pr-2 border-r border-r-2">Sign In</a>
+          <a href="#" class="pl-1">Subscribe</a>
+        </div>
+        <div class="flex justify-end down__side">
+          <span class="text-5xl text-white material-icons">search</span>
+        </div>
+      </div>
+    </header>
+    <div
+      class="text-white md:flex-row-reverse md:flex feature__header hero__section md:w-[11/12] md:bg-yellow-300"
+    >
+      <img
+        src="https://www.mckinsey.com/~/media/mckinsey/home%20page/september%2024%202022/inclusive-economy-hp1-1080x1080-v3.png"
+        alt="image header"
+        class="md:h-[40%] md:w-[40%] object-cover object-center"
+      />
+      <div class="p-4 md:w-[54%]">
+        <h1 class="pt-4 text-3xl font-bold md:text-5xl">
+          We’re helping build an economy that works for <br />all.
+        </h1>
+        <p class="pt-5 pb-5 text-xl font-normal">
+          7 in 10 people live in societies with growing inequality. <br />That’s
+          why we’re taking action.
+        </p>
+        <span class="flex w-[50%] items-center">
+          <a href="#" class="mr-2 font-bold hover:text-[#2251ff] hover"
+            >See how we are helping</a
+          >
+          <i
+            class="font-semibold text-[#2251ff] material-icons text-bold hover hover:text-[#2251ff]"
+            >arrow_forward
+          </i>
+        </span>
+        <span class="flex w-[50%] items-center mt-5">
+          <a href="#" class="mr-2 font-bold hover:text-[#2251ff] hover"
+            >Preorder the #TitaniumEconomyBook</a
+          >
+          <i
+            class="font-semibold text-[#2251ff] material-icons text-bold hover hover:text-[#2251ff]"
+            >arrow_forward
+          </i>
+        </span>
+      </div>
+    </div>
+    <div class="p-4 slider_menu bg-[#f2f2f2] h-20 flex w-screen">
+      <div
+        class="flex justify-between w-[34%] border-r border-r-[#2251ff] treding__slide--one"
+      >
+        <h3 class="font-bold text-gray-600">TRENDING <br />INSIGHTS</h3>
+        <span class="pr-2 text-3xl font-bold text-[#2251ff]">1</span>
+      </div>
+      <div
+        class="flex justify-between w-full border-r border-r-[#2251ff] treding__slide--one"
+      >
+        <h3 class="font-normal text-gray-600">
+          How inflation is flipping the economic script, in seven charts
+        </h3>
+        <span class="pr-2 text-3xl font-bold text-[#2251ff]">2</span>
+      </div>
+      <div
+        class="flex justify-between w-[34%] border-r border-r-[#2251ff] treding__slide--one"
+      >
+        <h3 class="font-bold text-gray-600">TRENDING <br />INSIGHTS</h3>
+        <span class="pr-2 text-3xl font-bold text-[#2251ff]">1</span>
+      </div>
+    </div>
+
+    <!-- <header
+      class="top-0 max-w-screen-xl p-4 mx-auto lg:w-screen shadow-2xl header bg-[#051c2c]"
     >
       <section class="w-full flex justify-end bg-[#051c2c]">
         <div class="signin bg-[#051c2c]">
@@ -135,9 +243,8 @@
     </header>
     <section id="feature" class="bg-[#051c2c]">
       <div
-        class="flex items-center justify-between mb-2 space-y-0 md:space-y-0 md:flex-row bg-[#051c2c]"
+        class="flex items-center justify-between mb-2 space-y-0 md:space-y-0 md:flex-row bg-[#051c2c] hero__section"
       >
-        <!-- Left item -->
         <div class="flex flex-col justify-center max-h-full md:w-1/2">
           <h1
             class="max-w-md text-2xl font-normal leading-8 text-center text-white lg:max-w-full md:text-5xl md:text-left"
@@ -190,8 +297,7 @@
             </a>
           </div>
         </div>
-        <!-- Image -->
-        <div class="bg-red-600 md:w-1/2 md:mb-6">
+        <div class="flex justify-end md:w-1/2 md:mb-6">
           <img
             src="https://www.mckinsey.com/~/media/mckinsey/home%20page/september%2024%202022/inclusive-economy-hp1-1080x1080-v3.png"
             alt=""
@@ -199,8 +305,6 @@
           />
         </div>
       </div>
-    </section>
-
-    <!-- FEATURES -->
+    </section> -->
   </body>
 </html>
