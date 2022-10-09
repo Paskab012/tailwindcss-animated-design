@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-h1,
-p {
-  font-family: 'Volkhov', serif;
+* {
+  font-family: 'Montserrat', sans-serif;
   shadow: 1px 1px 0 rgb(0 0 0 / 20%);
 }
 
