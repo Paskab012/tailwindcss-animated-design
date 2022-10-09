@@ -9,12 +9,13 @@
       rel="stylesheet"
     />
 
+
     <link rel="stylesheet" href="./src/main.css" />
     <title>Document</title>
   </head>
   <body>
-    <header class="flex justify-between w-screen pl-6 pr-6 bg-red-500">
-      <div class="flex items-center w-screen bg-yellow-500">
+    <header class="flex justify-between w-screen pt-4 pl-6 pr-6 ">
+      <div class="flex items-center w-screen  lg:w-[20%]">
         <svg
           xmlns:dc="http://purl.org/dc/elements/1.1/"
           xmlns:cc="http://creativecommons.org/ns#"
@@ -432,7 +433,7 @@
         </svg>
       </div>
 
-      <div class="flex items-center justify-between gap-6">
+      <div class="flex items-center justify-between gap-6 lg:hidden">
         <i class="text-4xl font-bold material-icons"> search </i>
         <i class="text-4xl font-bold material-icons"> language </i>
         <i
@@ -441,12 +442,80 @@
           menu
         </i>
       </div>
+      <div class="lg:flex lg:flex-col  responsive__website lg:w-[70%] hidden">
+        <div class=" content__top">
+          <ul class="flex items-center justify-end gap-4">
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">Plain language</a>
+            </li>
+            <li>
+              <a href="">Legals </a>
+            </li>
+            <li>
+              <a href="">Privacy policy</a>
+            </li>
+            <li>
+              <a href="">Accessibility</a>
+            </li>
+            <li>
+              <a href="">Site map</a>
+            </li>
+            <li>
+              <a href="">Intranet</a>
+            </li>
+            <li>
+              <a href="">KIT</a>
+            </li>
+            <li>
+              <a href="">DE</a>
+            </li>
+            <li>
+              <a href="">  <span class="material-icons">
+                language
+                </span></a>
+            </li>
+            <li>
+              <a href="">  <span class="material-icons">
+                search
+                </span></a>
+            </li>
+          
+          </ul>
+        </div>
+        <div class="flex justify-end content__bottom">
+          <ul class="flex items-center justify-end gap-6 font-semibold">
+            <li>
+              <a href="">KIT</a>
+            </li>
+            <li>
+              <a href="">Topic</a>
+            </li>
+            <li>
+              <a href="">Studies</a>
+            </li>
+            <li>
+              <a href="">Research</a>
+            </li>
+            <li>
+              <a href="">Innovation</a>
+            </li>
+            <li>
+              <a href="">Career</a>
+            </li> 
+              <li>
+                <a href=""><span class="material-icons">
+                  home
+                  </span></a>
+              </li>
+          </ul>
+        </div>
+        
+      </div>
     </header>
-    <!DOCTYPE html>
-<html>
-   <head>
-    <title>Tailwind CSS Carousel</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet"> 
+  
 
 		<style>
 			.carousel-open:checked + .carousel-item {
@@ -480,7 +549,6 @@
 			}
 		</style>
 
-</head>
 
 <body class="font-sans leading-normal tracking-normal bg-white">
 
@@ -563,7 +631,7 @@
 <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
   <div class="flex flex-col p-6 w-[100%] pb-6">
     <img src="https://www.kit.edu/img/20221005-AB-01-003-teaser_rdax_1024x574_98s.jpg" alt="" class="w-[100%] object-cover object-center hover:transform">
-    <h1 class="pt-2 pb-6 text-xl font-semibold text-gray-500">
+    <h1 class="pt-2 pb-6 text-xl font-normal text-gray-500">
       New Electrolysis Processes for Sustainable Chemical Production 
     </h1>
     <p>
@@ -645,7 +713,7 @@
       </p>
     </button>
     </div>
-    <div class="flex flex-col p-8 h-fit faq__section bg-cover bg-center bg-[url('https://www.kit.edu/img/studieren-20110107-CS-03-173_rdax_1230x769s.jpg')] border-r-xl"  >
+    <div class="flex flex-col p-8 h-fit faq__section bg-cover bg-center bg-[url('https://www.kit.edu/img/studieren-20110107-CS-03-173_rdax_1230x769s.jpg')] rounded-r-xl rounded-r"  >
       <h1 class="text-2xl font-semibold text-white">
         DEGREE PROGRAM
       </h1>
@@ -659,6 +727,205 @@
       </button>
       </div>
 </div>
+<div class="grid p-6 gap-y-6 excellence__section grig-cols-1 lg:grid-cols-2 gap-x-12">
+  <div class="flex flex-col p-4 bg-[#00876c] rounded-xl border-r border-r-xl">
+    <h1 class="text-2xl font-normal text-white underline lg:text-xl w-fit underline-offset-4">
+      Excellent
+    </h1>
+    <p class="text-white">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, 
+      labore harum. Reprehenderit laborum autem error doloribus. Dolore, ratione, 
+      commodi porro magnam animi architecto veritatis consectetur error vitae dolor
+       iusto quibusdam.
+    </p>
+  </div>
+  <div class="flex flex-col p-4 bg-[#00876c] rounded-xl border-r border-r-xl">
+    <h1 class="text-2xl font-normal text-white underline lg:text-xl w-fit underline-offset-4">
+      Research University in the Helmholtz Association
+    </h1>
+    <p class="text-white">
+      KIT is the only German university of excellence that 
+      combines a long university tradition with large-scale 
+      national research.
+    </p>
+  </div>
+</div>
+<h1 class="p-6 text-4xl font-bold text-gray-700">
+  Events
+</h1>
+<div class="grid grid-cols-1 p-6 events__section lg:grid-cols-2">
+  <div class="flex flex-col ">
+    <img src="./src/images/image.png" alt="" class="object-cover object-top ">
+    <h4 class="pt-2 mb-4 text-xl text-gray-700 text-semibold">
+      Kunst Kurz und Knapp
+    </h4>
+    <span class="font-semibold">2022-10-10 12:00 - 12:15</span>
+    <span class="font-semibold">KIT, Campus Süd
+      Engler-Bunte-Institut
+      südl. Außenbereich, Geb.40.11, 40.12
+      76131 Karlsruhe</span>
+      <span>
+        Kunstführung zur Arbeit von Charlotte Sommer-Landgraf, Vereinigung, 1992 <br> Dauer: 10-15 Minuten <br> Die Teilnehmerzahl ist begrenzt, deshalb ist eine Anmeldung unter kunst@kit.edu dringend erforderlich. <br>  <i class="material-icons">
+          arrow_forward
+          </i>
+      </span>
+
+  </div>
+  <div class="flex flex-col w-full pt-12 mt-12 flex-c lg:h-full lg:pt-12 lg:p-1 to__event--calender lg:mt-0 h-fit">
+    <div class="flex">
+       <div class="bg-gray-400 date__left p-4 lg:w-[30%] lg:h-[100%] justify-center  mr-2 flex items-center boder-l border-l-[#00876c] border-l-8 ">
+      <h1 class="text-2xl font-semibold sm:text-xl">
+        10/10 <br>
+        2022
+      </h1>
+    </div>
+    <div class="flex flex-col p-2 bg-gray-200 content__right">
+      <h4 class="pb-1 text-lg font-normal">Lorem ipsum dolor, sit amet</h4>
+      <p class="text-xs">
+        Kunstführung zur Arbeit von Charlotte Sommer-Landgraf, Vereinigung, 1992 Dauer: 10-15 Minuten
+        Die Teilnehmerzahl ist begrenzt, deshalb ist eine Anmelg
+      </p>
+    </div>
+    </div>
+        <div class="flex mt-4">
+       <div class="bg-gray-400 date__left p-4 lg:w-[30%] lg:h-[100%] justify-center  mr-2 flex items-center boder-l border-l-[#00876c] border-l-8 ">
+      <h1 class="text-2xl font-semibold sm:text-xl">
+        10/10 <br>
+        2022
+      </h1>
+    </div>
+    <div class="flex flex-col p-2 bg-gray-200 content__right">
+      <h4 class="pb-1 text-lg font-normal">Lorem ipsum dolor, sit amet</h4>
+      <p class="text-xs">
+        Kunstführung zur Arbeit von Charlotte Sommer-Landgraf, Vereinigung, 1992 Dauer: 10-15 Minuten
+        Die Teilnehmerzahl ist begrenzt, deshalb ist eine Anmelg
+      </p>
+    </div>
+    </div>
+
+    <div class="flex mt-4">
+      <div class="bg-gray-400 date__left p-4 lg:w-[30%] lg:h-[100%] justify-center  mr-2 flex items-center boder-l border-l-[#00876c] border-l-8 ">
+     <h1 class="text-2xl font-semibold sm:text-xl">
+       10/10 <br>
+       2022
+     </h1>
+   </div>
+   <div class="flex flex-col p-2 bg-gray-200 content__right">
+     <h4 class="pb-1 text-lg font-normal">Lorem ipsum dolor, sit amet</h4>
+     <p class="text-xs">
+       Kunstführung zur Arbeit von Charlotte Sommer-Landgraf, Vereinigung, 1992 Dauer: 10-15 Minuten
+       Die Teilnehmerzahl ist begrenzt, deshalb ist eine Anmelg
+     </p>
+   </div>
+   </div>
+
+   <div class="flex mt-4">
+    <div class="bg-gray-400 date__left p-4 lg:w-[30%] lg:h-[100%] justify-center  mr-2 flex items-center boder-l border-l-[#00876c] border-l-8 ">
+   <h1 class="text-2xl font-semibold sm:text-xl">
+     10/10 <br>
+     2022
+   </h1>
+ </div>
+ <div class="flex flex-col p-2 bg-gray-200 content__right">
+   <h4 class="pb-1 text-lg font-normal">Lorem ipsum dolor, sit amet</h4>
+   <p class="text-xs">
+     Kunstführung zur Arbeit von Charlotte Sommer-Landgraf, Vereinigung, 1992 Dauer: 10-15 Minuten
+     Die Teilnehmerzahl ist begrenzt, deshalb ist eine Anmelg
+   </p>
+ </div>
+ </div>
+
+ <div class="flex mt-4">
+  <div class="bg-gray-400 date__left p-4 lg:w-[30%] lg:h-[100%] justify-center  mr-2 flex items-center boder-l border-l-[#00876c] border-l-8 ">
+ <h1 class="text-2xl font-semibold sm:text-xl">
+   10/10 <br>
+   2022
+ </h1>
+</div>
+<div class="flex flex-col p-2 bg-gray-200 content__right">
+ <h4 class="pb-1 text-lg font-normal">Lorem ipsum dolor, sit amet</h4>
+ <p class="text-xs">
+   Kunstführung zur Arbeit von Charlotte Sommer-Landgraf, Vereinigung, 1992 Dauer: 10-15 Minuten
+   Die Teilnehmerzahl ist begrenzt, deshalb ist eine Anmelg
+ </p>
+</div>
+</div>
+   
+  </div>
+  
+</div>
+
+<div class="grid grid-cols-1 gap-8 pt-8 pl-4 pr-6 bg-gray-200 footer__section lg:grid-cols-4">
+  <div class="grid grid-cols-1 space-y-4 vising__section ">
+    <h1 class="font-semibold text-gray-800 ">
+      Visiting
+    </h1>
+    <span class="text-[#00876c] font-normal border-b border-b-4 border-b-[#090a0a] mb-6">
+      How to reach the KIT
+    </span>
+    <span class="text-[#00876c] font-normal border-b border-b-8 border-b-[#090a0a] ">
+      Campus map
+    </span>
+    <span class="text-[#00876c] font-normal border-b border-b-4 border-b-[#090a0a]  ">
+      Events
+    </span>
+    <span class="text-[#00876c] font-normal border-b border-b-4 border-b-[#090a0a]  ">
+      KIT-SHOP
+    </span>
+  </div>
+  <div class="grid space-y-4 vising__section ">
+    <h1 class="font-semibold text-gray-800 ">
+      Applying
+    </h1>
+    <span class="text-[#00876c] font-normal border-b border-b-4 border-b-[#090a0a] mb-6">
+      How to reach the KIT
+    </span>
+    <span class="text-[#00876c] font-normal border-b border-b-8 border-b-[#090a0a] ">
+      Campus map
+    </span>
+    <span class="text-[#00876c] font-normal border-b border-b-4 border-b-[#090a0a]  ">
+      Events
+    </span>
+    <span class="text-[#00876c] font-normal border-b border-b-4 border-b-[#090a0a]  ">
+      KIT-SHOP
+    </span>
+  </div>
+  <div class="grid space-y-4 vising__section ">
+    <h1 class="font-semibold text-gray-800 ">
+      Media
+    </h1>
+    <span class="text-[#00876c] font-normal border-b border-b-4 border-b-[#090a0a] mb-6">
+      How to reach the KIT
+    </span>
+    <span class="text-[#00876c] font-normal border-b border-b-8 border-b-[#090a0a] ">
+      Campus map
+    </span>
+    <span class="text-[#00876c] font-normal border-b border-b-4 border-b-[#090a0a]  ">
+      Events
+    </span>
+    <span class="text-[#00876c] font-normal border-b border-b-4 border-b-[#090a0a]  ">
+      KIT-SHOP
+    </span>
+  </div>
+
+  <div class="grid space-y-4 vising__section ">
+    <h1 class="font-semibold text-gray-800 ">
+      Contact
+    </h1>
+    <span class="text-[#00876c] font-normal border-b border-b-4 border-b-[#090a0a] mb-6">
+      How to reach the KIT
+    </span>
+    <span class="text-[#00876c] font-normal border-b border-b-8 border-b-[#090a0a] ">
+      Campus map
+    </span>
+    <span class="text-[#00876c] font-normal border-b border-b-4 border-b-[#090a0a]  ">
+      Events
+    </span>
+    <span class="text-[#00876c] font-normal border-b border-b-4 border-b-[#090a0a]  ">
+      KIT-SHOP
+    </span>
+  </div>
+</div> 
 </html>
   </body>
 </html>
